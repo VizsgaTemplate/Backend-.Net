@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "632bbdfc-dcf2-40f3-aeb8-fba5fed7d6d4",
+		"name": "Backend teszt",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27684608"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post with _id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 102,\r\n    \"kategoria\": 2,\r\n    \"leiras\": \"Eladó ...\",\r\n    \"hirdetesDatuma\": \"2022-03-19\",\r\n    \"tehermentes\": true,\r\n    \"ar\": 45000000,\r\n    \"kepUrl\": \"https://pictures.com/apartman.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post without _id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kategoria\": 2,\r\n    \"leiras\": \"Eladó ...\",\r\n    \"hirdetesDatuma\": \"2022-03-19\",\r\n    \"tehermentes\": true,\r\n    \"ar\": 45000000,\r\n    \"kepUrl\": \"https://pictures.com/apartman.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post without leiras",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"kategoria\": 2,\r\n    \"hirdetesDatuma\": \"2022-03-19\",\r\n    \"tehermentes\": true,\r\n    \"ar\": 45000000,\r\n    \"kepUrl\": \"https://pictures.com/apartman.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete existing id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete not existing id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7229/api/ingatlan/11203124",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7229",
+					"path": [
+						"api",
+						"ingatlan",
+						"11203124"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
