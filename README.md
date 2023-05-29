@@ -55,4 +55,4 @@ use ADATBÁZISNEVE
 És mentsd el a **projekt mappájába**!
 
 - Importáld be csv-ből az adatokat így:
-![alt text](https://github.com/VizsgaTemplate/Backend-.Net/video/Import-from-csv.gif)
+- <img src="https://github.com/VizsgaTemplate/Backend-.Net/video/Import-from-csv.gif" width="400" height="400" />
